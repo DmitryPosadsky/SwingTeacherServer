@@ -5,11 +5,11 @@
  */
 package dev.dposadsky.java.swingteacherdesktop.main;
 
-import dev.dposadsky.java.swingteacherdesktop.controllers.swing.MainFrameController;
-import java.sql.SQLException;
-import javax.swing.SwingUtilities;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import javax.swing.*;
+import java.sql.SQLException;
 
 
 /**
@@ -23,7 +23,7 @@ public class Start {
             @Override
             public void run() {
                 ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-                MainFrameController mainFrameController = (MainFrameController) context.getBean("mainFrameController"); 
+
             }
         }); 
     }
